@@ -21,6 +21,15 @@ A mortal follower grows from careful outsider to confident supernatural dance pa
 The manor changes with her.
 ```
 
+## Submission Anchors
+
+| Guideline Need | Where It Appears |
+|---|---|
+| Color and mood reference | Section 1: Color and Mood Reference. |
+| Gameplay screen mockup | Section 2: Gameplay Screen Mockup. |
+| Mobile readability | Section 2 and Style Notes. |
+| Original visual direction | Character, key moment, stance, and manor transformation images. |
+
 ---
 
 ## 1. Color and Mood Reference

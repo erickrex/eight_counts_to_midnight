@@ -14,7 +14,7 @@
 
 **Eight Counts to Midnight** is a gothic romance dance-life sim. The player is a mortal Bachata follower who trains by day, styles herself for the ballroom, restores Crimson Manor, and dances at night with Alistair, a cursed vampire lord.
 
-This is **Simulation & Management first**. Each night is shaped by the player's day choices:
+This is **Simulation & Management first**. The player manages time, stats, cards, wardrobe, rooms, and Bond; the dance is where those choices pay off. Each night is shaped by the player's day choices:
 
 | Day Choice | Night Impact |
 |---|---|
@@ -84,7 +84,23 @@ Dawn turns the performance into lasting progress. The player earns Lumen Essence
 
 ---
 
-## 4. Progression, Depth & Retention
+## 4. Core Systems Snapshot
+
+| System | Player Manages | Dance Impact |
+|---|---|---|
+| Day actions | Limited preparation choices. | Sets the resources and tools available at night. |
+| Dance cards | Footwork, transitions, styling, and support. | Builds the exact 8-beat phrase. |
+| Resources | Beats, Flow, Frame, Poise, Bond, and Lumen Essence. | Controls legality, safety, score, and growth. |
+| Stances | Open, Close, Wrap, and Shadow. | Changes which cards, leads, and camera moments are possible. |
+| Wardrobe | Shoes, gloves, gowns, jewelry, hair, and perfume. | Adds stats and helps define a dance build. |
+| Manor rooms | Ballroom, Mirror Hall, Wardrobe Atelier, and Music Room. | Unlocks better training, style, music, and preparation. |
+| Bond | Dialogue, lead study, and matched dances. | Makes Alistair's lead easier to read and unlocks deeper choreography. |
+
+The systems stay connected through one question: **what did the player prepare, and how does it change the next dance?**
+
+---
+
+## 5. Progression, Depth & Retention
 
 The player grows through connected management layers. Each layer changes both the fantasy and the next dance.
 
@@ -157,7 +173,19 @@ The return hook is clear: tomorrow the player can dance with more style, trust, 
 
 ---
 
-## 5. What Makes It Fun
+### First Three Sessions
+
+| Session | Player Does | What Changes |
+|---|---|---|
+| Session 1 | Completes a Day 1 solo phrase and cracks Alistair's stone shell. | Learns the 8-beat rule and sees the manor respond to dance. |
+| Session 2 | Trains Technique, rehearses cards, answers Close Invitation with Step Into Close. | Sees day preparation create a Perfect Connection. |
+| Session 3 | Chooses between a wardrobe/stat boost, a card upgrade, or Bond time before dancing again. | Learns that different builds create different replays and rewards. |
+
+This early arc proves the full loop in a small space: solo confidence, first partner trust, then player choice.
+
+---
+
+## 6. What Makes It Fun
 
 The emotional core is **becoming worthy of the dance**. The player grows through rhythm, trust, posture, and style.
 
@@ -176,7 +204,7 @@ The design is innovative because **deck-construction is choreography**. The play
 
 ---
 
-## 6. If I Had More Time
+## 7. If I Had More Time
 
 The first version should prove the daily preparation loop, the 8-beat phrase builder, persistent growth, wardrobe function, and one strong relationship arc. Later versions can expand without changing that base.
 

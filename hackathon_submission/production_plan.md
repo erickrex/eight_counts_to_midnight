@@ -16,6 +16,15 @@ Day preparation -> 3 short 8-beat dance phrases -> Dawn growth reward
 
 It proves one promise: **the player prepares, turns that preparation into choreography, then sees the character and manor change.**
 
+### MVP Acceptance Criteria
+
+- Day choices change visible Night values.
+- The player can build 3 legal 8-beat phrases.
+- Illegal cards explain the problem in plain language.
+- Close Invitation can be answered with Step Into Close.
+- Clean, Stumble, and Perfect Connection outcomes are visible in replay.
+- Dawn applies at least one lasting reward and one Ballroom change.
+
 ### Included in MVP
 
 | System | Minimum Scope |
@@ -42,11 +51,23 @@ It proves one promise: **the player prepares, turns that preparation into choreo
 | Large card catalog | Ten cards are enough to test choreography. |
 | Multiple romance routes | Alistair must work first because he drives the lead system. |
 | Advanced syncopation | Best after players understand Beats, Flow, Frame, and stance. |
-| Full monetization | Best handled after the core loop works. |
 
 ---
 
-## 2. Build Sequence
+## 2. Technical Dependencies
+
+| Dependency | Why It Matters | MVP Approach |
+|---|---|---|
+| Phrase rules engine | Checks Beats, stance legality, Flow/Frame costs, and lead responses. | Use a small card data table and one validation function. |
+| Card/timeline UI | Lets players read choreography on a phone. | Portrait layout with hand cards, Bar A/Bar B, modifier slots, and clear illegal-card feedback. |
+| Lead-pattern validation | Makes Alistair feel like a dance partner. | Build Close Invitation first; preview Dark Embrace only as the Shadow teaser. |
+| Replay layer | Turns card choices into a dance result. | Use short pose sequences for Clean, Stumble, and Perfect Connection outcomes. |
+| Progression save state | Lets Day choices affect Night and Dawn. | Store Technique bonus, upgraded card, Bond, Lumen Essence, and Ballroom state. |
+| Art and animation pipeline | Keeps the visual package achievable. | Start with stills and simple movement beats, then polish the key moments. |
+
+---
+
+## 3. Build Sequence
 
 | Phase | What Gets Built | What's Testable After |
 |---|---|---|
@@ -59,16 +80,16 @@ Build order follows dependencies. Phrase rules come before UI polish. UI comes b
 
 ---
 
-## 3. Testing & Validation
+## 4. Testing & Validation
 
 The first-playable milestone is the Day 2 partner dance. The player starts after the Day 1 awakening, chooses two preparation actions, enters the Ballroom, sees **Close Invitation**, uses **Step Into Close**, attaches **Eye Contact**, locks the phrase, and watches a Perfect Connection replay.
 
 ### Fun Signals
 
-- [ ] Players say they are building a dance.
-- [ ] Players understand that Day choices changed Night results.
+- [ ] A new player builds the first legal phrase within 2 minutes.
+- [ ] A new player can explain why **Step Into Close** answers **Close Invitation**.
+- [ ] A new player notices the Technique or Rehearsal bonus during the Night phase.
 - [ ] Players replay for a cleaner Perfect Connection.
-- [ ] Players notice the Ballroom change after the dance.
 - [ ] Players ask when they can unlock Shadow stance.
 
 ### Adjustment Signals
