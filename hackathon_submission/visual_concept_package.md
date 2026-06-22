@@ -2,7 +2,7 @@
 
 ## Visual Concept Package
 
-**Game Title:** Dancing with Dracula: Crimson Manor  
+**Game Title:** Eight Counts to Midnight  
 **Genre:** Simulation & Management  
 **Platform:** Mobile, portrait orientation  
 
@@ -11,6 +11,8 @@
 ## Visual Direction
 
 The game should feel like a gothic romance dance sim, not a horror game. The look is elegant, readable, and mobile-first: moonlit marble, crimson velvet, candlelight, silver jewelry, stained glass, soft supernatural glow, and expressive partner-dance poses.
+
+All visuals in this package are original concept images generated for this submission.
 
 The visual promise is simple:
 
@@ -99,13 +101,30 @@ This moment should feel intimate, controlled, and earned.
 
 **Purpose:** Shows the vampire-specific visual differentiator.
 
-Shadow stance is unlocked through Bond. The follower moves inside Alistair's supernatural silhouette, and their shadows merge across the ballroom floor. It should feel romantic and risky, with crimson and violet-blue highlights.
+Shadow stance is unlocked through Bond. The follower moves inside Alistair's supernatural silhouette, and their shadows merge across the ballroom floor. It should feel romantic, risky, and trust-driven, with crimson and violet-blue highlights.
 
 Shadow gives the game a visual idea that only belongs to this concept: Bachata partner dance inside a vampire's aura.
 
 ---
 
-## 7. Manor Transformation
+## 7. Stance Language
+
+![Four stance reference](../images_visual_package/4_stances.png)
+
+**Purpose:** Shows the visual and mechanical range of the dance system.
+
+| Stance | Visual Read |
+|---|---|
+| Open | Light connection, rhythm building, safe opener. |
+| Close | Chest-to-chest partner dance, stronger connection, lead response. |
+| Wrap | Entwined shape, tighter control, advanced transitions. |
+| Shadow | Vampire-specific aura, trust, risk, and supernatural payoff. |
+
+This page helps judges see that the card system is choreography. Stance is not just a rule; it changes body position, camera feeling, and emotional tone.
+
+---
+
+## 8. Manor Transformation
 
 ![Grand Ballroom before and after transformation](../images_visual_package/before_after_ballroom.png)
 
@@ -138,7 +157,7 @@ Prepare by day. Dance by night. Grow at dawn.
 
 ## Package Summary
 
-These seven assets cover the required anchors and the game's main visual promises:
+These eight assets cover the required anchors and the game's main visual promises:
 
 | Required / Useful Element | Asset |
 |---|---|
@@ -148,4 +167,5 @@ These seven assets cover the required anchors and the game's main visual promise
 | Key moment panel 1 | `key_moment_day_1.png` |
 | Key moment panel 2 | `day_2.png` |
 | Unique mechanic visual | `shadow_stance.png` |
+| Stance reference | `4_stances.png` |
 | Progression / world change | `before_after_ballroom.png` |

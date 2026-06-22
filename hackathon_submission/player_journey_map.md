@@ -2,7 +2,7 @@
 
 ## Player Journey Map
 
-**Game Title:** Dancing with Dracula: Crimson Manor
+**Game Title:** Eight Counts to Midnight
 
 **Journey Focus:** First 15 minutes of onboarding, from Day 1 solo dance to Day 2 first partner dance.
 

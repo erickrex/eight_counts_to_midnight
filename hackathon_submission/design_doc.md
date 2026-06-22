@@ -2,7 +2,7 @@
 
 ## Game Design Document
 
-**Game Title:** Dancing with Dracula: Crimson Manor  
+**Game Title:** Eight Counts to Midnight  
 **Genre:** Simulation & Management  
 **Platform:** Mobile, iOS and Android  
 **Orientation:** Portrait  
@@ -12,7 +12,7 @@
 
 ## 1. Concept
 
-**Dancing with Dracula: Crimson Manor** is a gothic romance dance-life sim. The player is a mortal Bachata follower who trains by day, styles herself for the ballroom, restores Crimson Manor, and dances at night with Alistair, a cursed vampire lord.
+**Eight Counts to Midnight** is a gothic romance dance-life sim. The player is a mortal Bachata follower who trains by day, styles herself for the ballroom, restores Crimson Manor, and dances at night with Alistair, a cursed vampire lord.
 
 This is **Simulation & Management first**. Each night is shaped by the player's day choices:
 

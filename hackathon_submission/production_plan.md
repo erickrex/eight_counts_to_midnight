@@ -2,7 +2,7 @@
 
 ## Production Plan
 
-**Game Title:** Dancing with Dracula: Crimson Manor
+**Game Title:** Eight Counts to Midnight
 
 ---
 
