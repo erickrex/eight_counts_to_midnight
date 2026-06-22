@@ -27,7 +27,7 @@ Anchor Requirement
 Timing Requirement
 Animation Tag
 Upgrade Path
-Room Unlock Source
+Facility Unlock Source
 Flavor Text
 ```
 
@@ -65,7 +65,7 @@ Flavor Text
 | Hammerlock Turn | Footwork | 4 | Wrap | Open | +120 points. Clears one negative crowd or tension modifier. |
 | The Sensual Dip | Footwork | 4 | Close | Open | +200 points. Requires 20 Frame to play safely. |
 | Shadow Isolation | Footwork | 4 | Shadow | Shadow | +140 points. Creates a Syncopation anchor. Future content, not part of the hackathon pitch. |
-| Moonlit Turnout | Footwork | 4 | Open | Open | +90 points. Extra multiplier if the Stained-Glass Gallery is restored. |
+| Moonlit Turnout | Footwork | 4 | Open | Open | +90 points. Extra multiplier if the Stained-Glass Gallery is improved. |
 
 ---
 
@@ -103,4 +103,4 @@ Syncopation is a Grand Library unlock, not a first-pitch core system and not a s
 | Finger Trace | Styling | 0 | 1 | Attached to Close card | +30 points. +1 Bond progress once per night. Advanced Library flourish. |
 | Hip Tap Accent | Styling | 0 | 0 | Beat 4 or 8 only | +20 points. Maintains rhythm chain. Advanced Library flourish. |
 | Quick Glance | Styling | 0 | 0 | After Eye Contact | +15 points. Reveals next phrase lead pattern earlier. Advanced Library flourish. |
-| Rose Step | Styling | 0 | 1 | Conservatory restored | +35 points. Adds botanical VFX. Advanced Library flourish. |
+| Rose Step | Styling | 0 | 1 | Conservatory improved | +35 points. Adds botanical VFX. Advanced Library flourish. |

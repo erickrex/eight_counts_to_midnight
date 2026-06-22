@@ -5,8 +5,8 @@ Comprehensive Game Design Document
 Version: 0.1  
 Platform: Mobile, iOS and Android  
 Orientation: Portrait  
-Genre: Simulation and Management / Persistent RPG Card Game / Romance Deck Construction  
-Core Theme: Gothic romance, Bachata choreography, estate restoration, tactical card play  
+Genre: Simulation and Management / Dance-Life Sim / Persistent Romance Card Game  
+Core Theme: Gothic romance, Bachata skill growth, style management, castle lifestyle progression, dance card play  
 
 ---
 
@@ -16,7 +16,7 @@ This document is the current source of truth for the Bachata deckbuilder mobile 
 
 The most important design constraint is that this is **not a roguelike**. The game borrows pacing ideas from tactical card games, but it does not use permadeath, disposable decks, random map runs, or run-based progression resets.
 
-The game uses short card-driven dance decisions inside each nightly performance, but all meaningful progression is persistent. Cards, room upgrades, outfits, social bonds, unlocked mechanics, and manor state carry forward permanently.
+The game uses short card-driven dance decisions inside each nightly performance, but all meaningful progression is persistent. Dance skill, card mastery, outfits, accessories, social bonds, unlocked castle facilities, and visual identity carry forward permanently.
 
 ### Canon Rules
 
@@ -28,8 +28,10 @@ The game uses short card-driven dance decisions inside each nightly performance,
 - Each phrase must resolve to exactly 8 Beats once full play is unlocked.
 - There is no permadeath.
 - Failure causes a stumble, score loss, Poise loss, reduced rewards, or early song end.
-- The player restores the manor permanently with Lumen Essence.
-- Relationship progression with Alistair unlocks dialogue, lore, passive buffs, and temporary performance bonuses.
+- The player is a mortal follower improving her technique, style, confidence, and relationship with Alistair.
+- Lumen Essence funds personal growth, wardrobe pieces, rehearsal upgrades, and castle facility improvements.
+- Castle spaces support the player's growth; they are training, styling, music, relationship, and performance facilities rather than the sole goal.
+- Relationship progression with Alistair unlocks dialogue, lore, passive buffs, temporary performance bonuses, and more demanding lead patterns.
 
 ---
 
@@ -41,40 +43,40 @@ The game uses short card-driven dance decisions inside each nightly performance,
 
 ### Logline
 
-A gothic estate-management romance game where players restore a cursed manor by day, then construct persistent Bachata card decks to dance with its brooding Vampire Lord by night.
+A gothic dance-life simulation where a mortal follower trains by day, refines her style, improves a haunted castle's performance spaces, and dances Bachata by night with a brooding Vampire Lord.
 
 ### High Concept
 
-The player inherits or discovers the ruined Crimson Manor, a gothic estate sealed under a centuries-old curse. At its center is Alistair, a Vampire Lord frozen in stone inside the Grand Ballroom. By dancing with him each night, the player generates Lumen Essence, restores the manor, unlocks new rooms, upgrades cards, deepens their bond with Alistair, and gradually breaks the curse.
+The player arrives at Crimson Manor as a mortal follower: inexperienced, underdressed for the supernatural ballroom, and drawn into Alistair's curse through the first dance. The castle is a gothic performance hub where each space helps her become a better partner: the Mirror Hall trains technique, the Wardrobe Atelier shapes style, the Music Room unlocks songs, the Conservatory provides sensual styling materials, and the Grand Ballroom hosts the nightly performance.
 
 The moment-to-moment gameplay is a portrait-mode dance card engine built around short 8-count Bachata phrases. Players combine Footwork, Transition, Styling, and Support cards to build musically accurate dance routines. At the end of each phrase, the UI disappears and the characters perform the chosen movement as a cinematic 3D sequence.
 
-The long-term gameplay is a persistent simulation loop: collect cards, merge duplicates, restore rooms, unlock new mechanics, equip outfits, improve social links, and build a stronger deck for future nightly performances.
+The long-term gameplay is a persistent simulation loop: train the mortal follower, rehearse and merge cards, assemble outfits, improve castle facilities, deepen the bond with Alistair, and return each night as a more confident and expressive dancer.
 
 ### Target Audience
 
-- Women 18-35 interested in romance, cozy games, fashion, narrative progression, and character bonding.
-- Cozy simulation players who enjoy visible restoration and daily routines.
+- Women 18-35 interested in romance, cozy games, fashion, self-improvement arcs, narrative progression, and character bonding.
+- Cozy simulation players who enjoy visible growth, daily routines, style collection, and character progression.
 - Tactical CCG and deck-construction players who enjoy combo optimization.
 - Mobile players who want short but satisfying sessions.
 
 ### Hackathon / Pitch Positioning
 
-The game fits a Simulation and Management category by making estate restoration, relationship management, deck collection, and daily planning the main persistent structure. It replaces simple tycoon tapping with a deep musical card system wrapped in high-end gothic romance visuals.
+The game fits a Simulation and Management category by making daily growth planning, skill training, wardrobe management, relationship management, deck collection, and castle facility upgrades the main persistent structure. It replaces simple tycoon tapping with a stylish dance-life routine wrapped in high-end gothic romance visuals.
 
 The loop is:
 
 ```text
-Invest by day -> Perform by night -> Restore at dawn -> Expand tomorrow
+Train and style by day -> Perform by night -> Grow at dawn -> Unlock tomorrow
 ```
 
 ---
 
 ## 3. Design Pillars
 
-### Pillar 1: Persistent Romance Simulation
+### Pillar 1: Mortal Follower Growth Simulation
 
-The player is not just completing isolated dances. They are living through an in-game calendar, restoring an estate, and developing a relationship with Alistair. The manor, deck, wardrobe, and relationship state all persist.
+The player is not just completing isolated dances. She is managing the growth of a mortal follower: technique, confidence, style, deck mastery, social bond, and access to supernatural castle facilities all persist.
 
 ### Pillar 2: Bachata as Tactical Language
 
@@ -84,38 +86,43 @@ Every dance phrase is built from real-feeling Bachata concepts: 8-count timing, 
 
 The UI treats each turn as an 8-beat musical phrase. Beginners can play obvious legal cards. Advanced players optimize Flow, Frame, stance chains, multipliers, and Alistair's lead patterns.
 
-### Pillar 4: Visible Restoration
+### Pillar 4: Visible Self and Space Transformation
 
-Every major restoration must visibly transform the estate. Thorns burn away, stained glass repairs itself, moonlight returns, dead vines bloom, rooms unlock, and the dance floor becomes more spectacular over time.
+Every major improvement should be visible on either the player character or the castle. Her posture sharpens, outfits become more elaborate, accessories change her silhouette, and castle spaces become more useful, beautiful, and performance-ready over time.
 
 ### Pillar 5: Cinematic Payoff
 
 The player must see the routine they built. Cards are not abstract effects; they become animated partner-dance phrases. The game regularly rewards good play with camera movement, close-ups, and visual flourishes.
 
-### Pillar 6: One-Handed Mobile First
+### Pillar 6: Fashion and Function
 
-The game is built for portrait play. The top half of the screen showcases the 3D dance and manor environment. The bottom half contains the hand, timeline, and drag targets.
+Outfits are not only cosmetics. Dresses, gloves, shoes, jewelry, hairstyles, and perfumes affect starting Flow, Frame, Styling costs, Bond gains, and performance scoring. Style is a management layer and a visual reward.
+
+### Pillar 7: One-Handed Mobile First
+
+The game is built for portrait play. The top half of the screen presents the 3D dance, the player's styling, Alistair, and the castle environment. The bottom half contains the hand, timeline, and drag targets.
 
 ---
 
 ## 4. Game Structure
 
-## 4.1 The Core Day/Night Loop
+## 4.1 The Follower Growth Loop
 
 The game follows a continuous in-game calendar.
 
-### Day: Invest and Prepare
+### Day: Train, Style, and Prepare
 
-During the day, the player navigates the manor hub and prepares for the night. To make the simulation layer explicit, each day gives the player **2 Day Action slots**.
+During the day, the player navigates Crimson Manor as a living performance hub and prepares the mortal follower for the night. To make the simulation layer explicit, each day gives the player **2 Day Action slots**.
 
-Each day, choose 2 of 4:
+Each day, choose 2 of 5:
 
+- **Train technique:** Practice posture, timing, turns, musicality, or Frame in a castle facility. Grants skill progress or a temporary performance boon.
 - **Rehearse cards:** Use the Rehearsal Grid to merge duplicates, refine the active deck, and prepare a specific dance plan.
-- **Restore a room:** Spend Lumen Essence to repair part of the manor and unlock new systems.
-- **Spend time with Alistair:** Trigger dialogue, gain Bond, reveal lore, or earn a temporary performance boon.
-- **Search manor debris:** Find duplicate cards, restoration materials, wardrobe pieces, or room clues.
+- **Style the follower:** Visit the Wardrobe Atelier to craft, equip, or enhance outfits, shoes, gloves, accessories, perfumes, and hairstyles.
+- **Spend time with Alistair:** Trigger dialogue, gain Bond, reveal lore, or learn how to read one of his lead patterns.
+- **Improve a castle space:** Spend Lumen Essence and materials to improve a facility such as the Ballroom, Mirror Hall, Music Room, Atelier, Library, or Conservatory.
 
-Free supporting actions, such as reviewing the Binder, inspecting unlocked rooms, or changing outfits, can happen without spending a Day Action slot.
+Free supporting actions, such as reviewing the Binder, inspecting unlocked spaces, or previewing outfits, can happen without spending a Day Action slot.
 
 The day phase is slow, intimate, and strategic. It should feel like preparing for a dance.
 
@@ -138,21 +145,21 @@ Night actions include:
 
 The night phase is tactical and expressive. The player should feel like they are choreographing with a dangerous but elegant partner.
 
-### Dawn: Restore and Grow
+### Dawn: Reflect and Grow
 
-At dawn, the player spends rewards and sees permanent progress.
+Dawn is the growth payout. The player sees what the night's performance earned and chooses how to convert it into long-term improvement.
 
 Dawn actions include:
 
-- Spend Lumen Essence on manor restoration.
-- Unlock rooms and systems.
+- Spend Lumen Essence on training, wardrobe work, card rehearsal, or castle facility improvements.
+- Unlock skills, outfits, facilities, and systems.
 - Gain access to new card pools.
-- Improve visual state of the estate.
+- Improve the visual identity of the follower and the castle.
 - Resolve narrative beats from the night's dance.
 - Bank relationship progress.
 - Preview the next day's objectives.
 
-The dawn phase is the emotional release. The player sees proof that the dance mattered.
+The dawn phase is the emotional release. The player sees proof that the dance mattered because the follower looks, moves, and prepares differently tomorrow.
 
 ---
 
@@ -160,7 +167,24 @@ The dawn phase is the emotional release. The player sees proof that the dance ma
 
 The game has several interconnected progression tracks.
 
-### 5.1 Card Collection
+### 5.1 Mortal Follower Skill Growth
+
+The main long-term fantasy is that the protagonist becomes a better dancer and a more captivating partner. Her growth is not abstract; it changes what cards are viable, how much Flow or Frame she can access, how she looks in animation, and how confidently she responds to Alistair.
+
+Skill tracks:
+
+| Skill Track | Managed Through | Gameplay Impact |
+| --- | --- | --- |
+| Technique | Mirror Hall drills, Rehearsal Grid practice | Unlocks cleaner Footwork, better draw consistency, and fewer illegal-card mistakes |
+| Musicality | Music Room practice, song study | Improves Flow generation, timing bonuses, and Beat 4/8 accent rewards |
+| Frame | Partner drills, Support practice, shoes/gloves | Increases Starting Frame or improves dip support checks |
+| Styling | Wardrobe Atelier, Conservatory materials | Reduces Styling costs, unlocks visual flourishes, improves style scoring |
+| Confidence | Successful performances, Bond scenes, outfits | Raises Poise and reduces penalties from Stumbles |
+| Connection | Time with Alistair, lead-pattern study | Reveals lead patterns earlier and improves Perfect Connection rewards |
+
+Skill growth should be visible in animation. Early movement feels careful and small. Later movement is smoother, more grounded, and more expressive.
+
+### 5.2 Card Collection and Rehearsal
 
 The player owns a persistent collection called the Binder. Cards are not discarded between nights. They can be earned, found, upgraded, merged, and slotted into the active dance deck.
 
@@ -175,7 +199,7 @@ Suggested deck-size onboarding:
 | Day 3 | 16-card deck | Teach Frame, Poise, and Support planning |
 | Day 7 | Full 20-card deck | Full deck construction unlocked |
 
-### 5.2 Merge Progression
+### 5.3 Merge Progression
 
 Duplicate cards can be merged during the day through the Rehearsal Grid.
 
@@ -205,31 +229,31 @@ Merge upgrades can improve:
 
 Merge upgrades are permanent. This reinforces the non-roguelike structure.
 
-### 5.3 Manor Restoration
+### 5.4 Castle Facilities
 
-Lumen Essence is spent to restore rooms.
+Crimson Manor is no longer positioned as the main objective by itself. It is a gothic training, styling, relationship, and performance hub. Improving a castle space should feel like unlocking a new lifestyle facility for the mortal follower.
 
-Each room provides:
+Each facility provides:
 
 - A visible environmental transformation.
-- A new card pool or card type.
-- A passive system upgrade.
+- A new training, style, music, relationship, or card function.
+- A passive facility bonus.
 - A narrative beat.
 - A reason to return to the day phase.
 
-Example rooms:
+Example facilities:
 
-| Room | Visual Restoration | System Unlock |
+| Facility | Visual Improvement | System Role |
 | --- | --- | --- |
-| Grand Ballroom | Thorns burn away, marble floor returns | Nightly performances |
-| Stained-Glass Gallery | Moonlight returns, lighting changes | Improved score multipliers |
-| Grand Library | Shelves repair, ghostly pages return | Advanced Footwork and later Syncopation cards |
-| Wardrobe Atelier | Gowns, gloves, jewelry, and restored heirlooms | Outfit stats and Starting Frame |
-| Gothic Conservatory | Dead vines bloom into midnight roses | Sensual Styling and botanical buff cards |
-| Music Room | Instruments retune themselves | New songs, tempo modifiers, audio layers |
-| Mirror Hall | Broken mirrors reform | Cinematic replay upgrades |
+| Grand Ballroom | Floor clears, chandeliers relight, stage marks appear | Nightly performances, song length, Lumen yield |
+| Mirror Hall | Broken mirrors reform into practice panels | Technique drills, replay review, Confidence growth |
+| Wardrobe Atelier | Dress forms, jewelry trays, and shoe racks return | Outfits, accessories, cosmetics with stats |
+| Music Room | Instruments retune themselves | Songs, rhythm modifiers, Musicality training |
+| Gothic Conservatory | Dead vines bloom into midnight roses | Perfumes, flowers, sensual Styling materials |
+| Grand Library | Shelves awaken, annotated dance texts appear | Advanced Footwork, later flourish tags, lead-pattern study |
+| Stained-Glass Gallery | Moonlight returns, color fills the castle | Mood bonuses, romantic scenes, visual identity |
 
-### 5.4 Relationship Progression
+### 5.5 Relationship Progression
 
 Alistair is both the main romantic interest and the dance partner. His relationship track should be mechanically relevant without reducing the romance to pure optimization.
 
@@ -250,15 +274,16 @@ Recommended currency split:
 
 | Currency | Source | Primary Use |
 | --- | --- | --- |
-| Lumen Essence | Nightly score and restored room bonuses | Restore manor, unlock rooms, upgrade estate |
+| Lumen Essence | Nightly score and facility bonuses | Train skills, improve facilities, unlock progression nodes |
 | Intimacy / Bond | Dialogue, gifts, matching Alistair's lead, story milestones | Unlock relationship scenes and social buffs |
-| Card Shards / Duplicates | Manor discoveries, room rewards, dance rewards | Merge and upgrade cards |
+| Style Materials | Atelier, Conservatory, performance rewards | Craft outfits, accessories, perfumes, hairstyles |
+| Card Shards / Duplicates | Facility searches, rehearsal rewards, dance rewards | Merge and improve cards |
 
-### 5.5 Wardrobe and Equipment
+### 5.6 Wardrobe, Styling, and Equipment
 
-Outfits are not just cosmetics. Gowns and accessories alter starting conditions and encourage different play styles.
+Outfits are not just cosmetics. Gowns, shoes, gloves, jewelry, hairstyles, and perfumes alter starting conditions and encourage different play styles. The Wardrobe Atelier is one of the clearest ways to make the game read as a lifestyle management sim.
 
-Example outfit stats:
+Example wardrobe effects:
 
 - +1 Starting Flow.
 - +5 Starting Frame.
@@ -266,6 +291,8 @@ Example outfit stats:
 - First Stumble each night costs no Poise.
 - Styling cards cost 1 less Flow once per phrase.
 - Wrap cards score higher but Transition cards cost more.
+- Eye Contact grants extra Bond once per performance.
+- Beat 4/8 accents trigger extra cloth or hair animation.
 
 Outfits should visually reinforce the gothic romance fantasy and create build identity without invalidating card strategy.
 
@@ -364,7 +391,7 @@ Rules:
 - Styling and Support cards usually cost Flow.
 - Flow is phrase-local by default.
 - Unspent Flow disappears at the end of the phrase.
-- Some outfits, relationship buffs, and room upgrades can grant Starting Flow.
+- Some outfits, relationship buffs, and facility improvements can grant Starting Flow.
 - Starting Flow should be small in early balance, usually +1 to +3.
 
 Example:
@@ -487,7 +514,7 @@ Anchor Requirement
 Timing Requirement
 Animation Tag
 Upgrade Path
-Room Unlock Source
+Facility Unlock Source
 Flavor Text
 ```
 
@@ -548,7 +575,7 @@ This gives the pitch enough tactical clarity without making the system sound lik
 
 ## 10. Scoring and Reward Formula
 
-The scoring model should be easy to explain. The pitch only needs one formula that connects dance performance to manor restoration.
+The scoring model should be easy to explain. The pitch only needs one formula that connects dance performance to follower growth.
 
 ### 10.1 Phrase Score
 
@@ -568,9 +595,9 @@ Close Invitation matched: x2
 Phrase Score = (60 + 25) x 2 = 170
 ```
 
-### 10.2 Lumen Essence
+### 10.2 Lumen Essence and Growth Rewards
 
-At dawn, phrase scores convert into Lumen Essence for room restoration.
+At dawn, phrase scores convert into Lumen Essence and growth rewards. Lumen is the main flexible currency for training, facility improvements, wardrobe work, and card rehearsal.
 
 ```text
 Lumen Essence = Floor(Total Performance Score / Essence Divisor) + Objective Bonuses
@@ -581,7 +608,7 @@ Objective bonuses can include:
 - First time matching a new lead pattern.
 - No Stumbles.
 - Perfect Support on a dip.
-- Completing a room-related objective.
+- Completing a skill, style, or facility objective.
 - Ending with high Poise.
 
 ### 10.3 Bond / Intimacy
@@ -637,7 +664,7 @@ The player still receives:
 - Any earned Bond.
 - Any tutorial completion progress.
 - No loss of owned cards.
-- No reset of manor state.
+- No reset of skills, wardrobe, cards, relationship, or castle facilities.
 
 The tone should be graceful: the player stumbled, the dance ended, and dawn came with fewer rewards.
 
@@ -654,16 +681,17 @@ Style target:
 - Dramatic moonlight.
 - Elegant but readable character silhouettes.
 - Expressive cloth, hair, and hand animation.
-- Restored rooms become progressively richer and warmer.
+- The protagonist's look evolves from simple mortal visitor to confident supernatural dance partner.
+- Castle facilities become progressively richer, warmer, and more useful.
 
-The game should avoid generic dark fantasy mud. The manor is cursed, but restoration should bring color, glow, and romance back into the space.
+The game should avoid generic dark fantasy mud. Crimson Manor is cursed, but the player's growth should bring color, glow, romance, and personal style back into the space.
 
 ### 12.2 Screen Layout
 
 Portrait layout:
 
 ```text
-Top 50%: 3D stage, dancers, manor environment, lead telegraphs
+Top 50%: 3D stage, dancers, castle facility, outfit silhouette, lead telegraphs
 Middle: 8-beat phrase timeline / two-bar routine display
 Bottom 50%: hand, deck controls, drag targets
 ```
@@ -722,7 +750,7 @@ Core requirements:
 - Musical accents on Beats 4 and 8.
 - Layered percussion for multiplier growth.
 - Subtle heartbeat or vampiric ambience during demanding lead patterns.
-- Warm musical swell when rooms restore.
+- Warm musical swell when the player unlocks a skill, outfit, or facility improvement.
 - Distinct audio stingers for Perfect Connection, Stumble, and Perfect Support.
 
 The player should learn timing partly by ear.
@@ -733,18 +761,18 @@ The player should learn timing partly by ear.
 
 ### 14.1 Premise
 
-The protagonist arrives at Crimson Manor and discovers Alistair, a Vampire Lord frozen in stone by a centuries-old curse. The Grand Ballroom is choked by black thorns, stained glass is shattered, and the manor has fallen into ruin.
+The protagonist arrives at Crimson Manor as a mortal outsider with a personal connection to dance but limited confidence as a follower. In the Grand Ballroom she discovers Alistair, a Vampire Lord frozen in stone by a centuries-old curse. The castle is dormant and silent, but its spaces still remember music, style, etiquette, and supernatural performance.
 
-The curse can only be weakened through dance. Each night, the protagonist dances with Alistair, drawing Lumen Essence from rhythm, trust, and connection. Each dawn, that essence restores part of the manor.
+The curse can only be weakened through dance, but the emotional arc is not just "fix the castle." Each day, the protagonist trains, rehearses, styles herself, studies Alistair's lead, and improves the castle facilities that support her growth. Each night, she dances with Alistair, drawing Lumen Essence from rhythm, trust, and connection. Each dawn, that essence becomes visible progress in her skills, wardrobe, relationship, and performance spaces.
 
 ### 14.2 Player Character
 
-The protagonist should be a romantic but capable lead. She is not a passive observer. She restores the manor, makes strategic choices, builds the deck, chooses how to respond to Alistair, and decides how much to trust him.
+The protagonist is the mortal follower. She is not a passive observer or a blank avatar. She chooses how to train, how to dress, how to rehearse, how much to trust Alistair, and what kind of dance partner she wants to become.
 
 Possible framing:
 
 - A dancer who has inherited the manor.
-- A restoration specialist drawn to a cursed estate.
+- A mortal follower drawn to a cursed ballroom after losing confidence in dance.
 - A musician or choreographer researching a forgotten ballroom.
 - A descendant of the person who sealed Alistair.
 
@@ -758,7 +786,7 @@ Character identity:
 - Dangerous but controlled.
 - Guarded early, increasingly vulnerable.
 - Expresses emotion through dance before words.
-- His power is tied to the manor's state.
+- His power is tied to the castle's music, memory, and nightly performances.
 - His lead patterns become more complex as his strength returns.
 
 ### 14.4 Romance Arc
@@ -769,44 +797,44 @@ Arc:
 
 1. Contact: touch the statue, first dance.
 2. Speech: Alistair can speak but remains guarded.
-3. Trust: he begins telegraphing more honestly.
-4. Vulnerability: VN scenes reveal curse history.
-5. Partnership: advanced dances require mutual trust.
-6. Choice: the player decides how to resolve the curse.
+3. Training: he teaches through lead patterns before he fully explains himself.
+4. Trust: he begins telegraphing more honestly.
+5. Vulnerability: VN scenes reveal curse history.
+6. Partnership: advanced dances require mutual trust.
+7. Choice: the player decides how to resolve the curse.
 
 ---
 
 ## 15. First Three Days Journey Map
 
-This section defines the onboarding sequence and resolves the current deck-size and phrase-length contradictions.
+This section defines the onboarding sequence for the new simulation framing: the player is managing a mortal follower's growth through training, style, rehearsal, relationship, and castle facilities.
 
 ### Day 1: The Awakening and the First 8-Count
 
 Objective:
 
-- Introduce the Day/Night/Dawn loop.
-- Introduce Open stance.
-- Introduce Beats.
-- Introduce simple Flow.
-- Introduce one Styling modifier.
-- Show visible restoration.
+- Introduce the mortal follower fantasy.
+- Introduce the Day/Night/Dawn structure.
+- Introduce Open stance, Beats, simple Flow, and one Styling modifier.
+- Show the first visible improvement to both the follower and the Ballroom.
 
 #### Day Narrative
 
-The protagonist arrives at the ruined Crimson Manor. The Grand Ballroom is choked by black thorns. In the center of the room stands Alistair, the Vampire Lord, frozen in stone.
+The protagonist arrives at Crimson Manor wearing practical mortal clothes, not a ballroom outfit. The Grand Ballroom is dark, thorned, and silent. In the center stands Alistair, frozen in stone.
 
-The player touches his hand. The ballroom reacts. Music begins faintly under the stone floor.
+She touches his hand. Music stirs under the floor. The first dance is not a polished performance; it is a supernatural lesson.
 
-#### Day Invest
+#### Day Management
 
-The player opens the Binder for the first time. The starter deck is guided and restricted.
+Day 1 is mostly guided. The player receives an 8-card starter deck and sees the first growth categories, but does not yet choose freely.
 
-Day 1 deck:
+Guided setup:
 
-- 8-card guided starter deck.
-- Only Open stance cards.
-- Only Basic Footwork and simple Styling.
-- No manual deck construction yet.
+- Active deck: 8 cards.
+- Stance: Open only.
+- Facility available: Grand Ballroom.
+- Outfit: simple mortal dress.
+- Skill state: Beginner Technique, low Confidence.
 
 Example cards:
 
@@ -815,7 +843,7 @@ Example cards:
 - Head Accent.
 - Breath Sync.
 
-#### Night Harvest
+#### Night Performance
 
 Tutorial phrase:
 
@@ -842,44 +870,50 @@ Animation:
 
 - The UI drops away.
 - The protagonist and Alistair execute a simple Bachata side-step phrase.
+- Her posture is careful but improving.
 - The Head Accent lands on Beat 8.
 - Alistair's stone shell cracks.
 
-#### Dawn Restoration
+#### Dawn Growth
 
-The player earns first Lumen Essence. They spend it to burn away the thorns in the center of the ballroom. A polished marble floor is revealed. Alistair breaks fully out of stone and breathes again.
+The player earns first Lumen Essence. The game introduces the growth screen.
 
-Unlocks:
+First guaranteed growth:
 
-- Dawn restoration screen.
-- Grand Ballroom restored to Level 1.
-- Alistair can now speak.
+- Grand Ballroom floor clears enough to become a usable practice space.
+- The protagonist gains **Beginner Confidence I**.
+- Alistair breaks fully out of stone and can speak.
 
-### Day 2: The Stance Shift and the Rehearsal Grid
+The emotional message is: the dance changed her and woke the castle.
+
+### Day 2: Training, Style, and the Rehearsal Grid
 
 Objective:
 
-- Introduce Close stance.
-- Introduce Alistair's lead patterns.
-- Introduce Transition cards.
-- Introduce merging duplicates.
-- Introduce first camera reward.
+- Introduce limited Day Action slots.
+- Introduce Rehearsal Grid merging.
+- Introduce first technique training.
+- Introduce Close stance and Alistair's lead pattern.
+- Show that the player's preparation affects the night's dance.
 
 #### Day Narrative
 
-Alistair can now speak, but he is guarded and weak. He explains that the ballroom still suppresses his power because the stained-glass windows are shattered and the moonlight cannot enter properly.
+Alistair can speak, but he is guarded. He tells the protagonist that the castle responds to rhythm, but she cannot rely on instinct alone. She needs technique, confidence, and the right preparation.
 
-#### Day Invest
+#### Day Management
 
-The player finds duplicate Basic Step cards in the debris.
+The player gets 2 Day Action slots for the first time.
+
+Recommended guided choices:
+
+1. **Train technique:** The player practices in front of a cracked mirror panel. Reward: +1 Starting Flow for the first phrase.
+2. **Rehearse cards:** The player finds duplicate Basic Step cards and uses the Rehearsal Grid.
 
 The Rehearsal Grid unlocks:
 
 ```text
 3 Basic Step cards -> 1 Foil Basic Step
 ```
-
-The player performs the first merge and slots the upgraded card into the active deck.
 
 Day 2 deck:
 
@@ -888,7 +922,7 @@ Day 2 deck:
 - First Transition card: Step Into Close.
 - First lead-pattern tutorial.
 
-#### Night Harvest
+#### Night Performance
 
 Alistair's lead appears:
 
@@ -903,6 +937,7 @@ Tutorial phrase:
 
 ```text
 Start Stance: Open
+Starting Preparation: +1 Flow from Technique Training
 
 Bar A, Beats 1-4:
 Foil Basic Step
@@ -927,55 +962,61 @@ Lead matched, Perfect Connection x2
 
 Camera payoff:
 
-- Because the player matched Alistair's lead and transitioned Open -> Close smoothly, the Tornado Camera triggers.
-- The camera orbits 180 degrees and slows into a close-up on Beat 8.
+- Because the player trained and matched Alistair's lead, the Tornado Camera triggers.
+- The protagonist's animation looks slightly more grounded than Day 1.
+- The camera slows into a close-up on Beat 8.
 
-#### Dawn Restoration
+#### Dawn Growth
 
-The player spends Lumen Essence to restore the broken stained-glass windows. Moonlight streams into the ballroom and permanently changes the lighting of future dances.
+The player spends Lumen to choose one early growth path:
+
+- **Mirror Hall Level 1:** unlocks repeatable Technique drills.
+- **Wardrobe Atelier Level 1:** unlocks first outfit piece with a small stat bonus.
+
+The recommended guided unlock is **Mirror Hall Level 1**, because it reinforces the new self-improvement loop.
 
 Unlocks:
 
-- Stained-Glass Gallery Level 1.
+- Mirror Hall Level 1.
+- Technique drills.
 - Lead preview for future dances.
 - Slight score bonus for Perfect Connection.
 
-### Day 3: Frame, Support, and Expansion
+### Day 3: Wardrobe, Frame, and Support
 
 Objective:
 
+- Introduce wardrobe as both visual identity and stats.
 - Introduce Frame.
 - Introduce Poise loss and Stumble.
 - Introduce a demanding lead pattern.
-- Introduce relationship buff.
-- Unlock the next manor room.
+- Introduce Bond as a preparation path.
 
 #### Day Narrative
 
-Alistair warns that tonight's rhythm will be more demanding. He gives the player a key to a locked wing of the manor. The player learns that the curse reacts violently as the manor wakes.
+Alistair warns that tonight's rhythm will ask for trust. He cannot simply tell the protagonist what to do; she has to learn how to hold her own frame. The Wardrobe Atelier opens, revealing gowns, gloves, shoes, and jewelry preserved by the castle's magic.
 
-Depending on chosen structure, Day 3 can unlock either:
+#### Day Management
 
-- Grand Library, if the focus is advanced card knowledge and later Syncopation.
-- Gothic Conservatory, if the focus is sensual styling and botanical restoration.
+The player chooses 2 Day Actions:
 
-Recommended canon for current build:
+1. **Style the follower:** Equip the first training gown or gloves.
+2. **Spend time with Alistair:** Unlock a short VN scene about trust and following.
 
-- Day 3 unlocks the **Grand Library**.
-- The Conservatory becomes a Week 1 or Day 4-5 unlock.
+Example wardrobe reward:
 
-#### Day Invest
-
-The player spends banked Bond / Intimacy to unlock a visual-novel dialogue sequence with Alistair.
+```text
+Moon Practice Gloves
+Effect: +5 Starting Frame
+Visual: Pale gloves with faint silver thread
+```
 
 Dialogue reward example:
 
 ```text
-Choice: Flirty
-Reward: +2 Starting Flow for tonight's first phrase
+Choice: Trust his lead
+Reward: +1 Bond and +1 Starting Flow for tonight's first phrase
 ```
-
-The player edits the deck to include Support cards.
 
 Day 3 deck:
 
@@ -984,7 +1025,7 @@ Day 3 deck:
 - Basic Support cards.
 - First Frame check response.
 
-#### Night Harvest
+#### Night Performance
 
 Lead Pattern:
 
@@ -993,14 +1034,14 @@ Sudden Dip
 Timing: Beat 7
 Requirement: Be in Close and have 20 Frame before Beat 7
 Success: Perfect Support
-Failure: Stumble, lose Poise, break multiplier
+Miss: Stumble, lose Poise, break multiplier
 ```
 
 Tutorial phrase:
 
 ```text
 Start Stance: Open
-Starting Buff: +2 Flow
+Starting Preparation: +5 Frame from gloves, +1 Flow from Bond scene
 
 Bar A, Beats 1-4:
 Madrid Step
@@ -1022,30 +1063,40 @@ Open -> Close
 Adds 10 Frame
 
 Bar B, Beats 7-8:
-Supported Dip / The Sensual Dip
+The Sensual Dip
 Requires 20 Frame
 
 Result:
-Frame total reaches 25
+Frame total reaches 30
 Perfect Support triggers
 ```
 
 Animation:
 
-- The player supports the dip instead of stumbling.
-- Alistair and the protagonist execute a gravity-defying dip.
-- The Tornado Camera or a special dip camera triggers.
+- The protagonist supports the dip instead of stumbling.
+- The gloves catch moonlight during the close-up.
+- Alistair reacts with visible surprise: she is becoming a true partner.
 
-#### Dawn Restoration
+#### Dawn Growth
 
-The player earns a large Lumen payout for successfully supporting the demanding dance. They unlock the Grand Library. Dead vines withdraw from the shelves, ghostly pages return to floating books, and moonlit dust fills the room.
+The player earns Lumen, Bond, and Style Materials. The castle offers multiple growth paths, making the management layer explicit.
+
+Choices:
+
+- Improve Mirror Hall for better Technique drills.
+- Improve Wardrobe Atelier for stronger outfit crafting.
+- Unlock Grand Library for advanced Footwork study.
+
+Recommended guided unlock:
+
+- **Wardrobe Atelier Level 1**, if not already chosen.
+- If already chosen, **Grand Library Level 1**.
 
 Unlocks:
 
-- Grand Library Level 1.
+- Outfit enhancement.
 - Advanced Footwork card pool.
-- First optional Library flourish cards begin appearing in loot.
-- Hair Toss becomes available later as an advanced Body Roll anchor card.
+- First optional Library flourish cards begin appearing later.
 
 ---
 
@@ -1055,13 +1106,13 @@ Only the first three days are fully specified above, but the broader first-week 
 
 | Day | Main Unlock | Player Learning |
 | --- | --- | --- |
-| Day 1 | Ballroom Level 1 | Beats, Flow, Open stance |
-| Day 2 | Stained-Glass Gallery | Close stance, lead patterns, merging |
-| Day 3 | Grand Library | Frame, Poise, demanding leads |
-| Day 4 | Library flourish cards | Optional Syncopation unlock |
-| Day 5 | Wardrobe Atelier | Outfits and starting stats |
-| Day 6 | Mirror Hall | In-app cinematic replay upgrades |
-| Day 7 | Full 20-card deck | Complete deck construction format |
+| Day 1 | Grand Ballroom practice space | Beats, Flow, Open stance, first Confidence growth |
+| Day 2 | Mirror Hall | Technique training, Close stance, lead patterns, Rehearsal Grid |
+| Day 3 | Wardrobe Atelier | Outfit stats, Frame, Poise, Support planning |
+| Day 4 | Music Room | Musicality training, new song mood, Beat 4/8 accent rewards |
+| Day 5 | Gothic Conservatory | Perfumes, flowers, sensual Styling materials |
+| Day 6 | Grand Library | Advanced Footwork study, optional flourish tags |
+| Day 7 | Full 20-card deck | Complete deck construction format and first self-directed day plan |
 
 ---
 
@@ -1071,9 +1122,9 @@ Only the first three days are fully specified above, but the broader first-week 
 
 | Activity | Target Length |
 | --- | ---: |
-| Day preparation | 1-3 minutes |
+| Day growth planning | 1-3 minutes |
 | Night performance | Three short phrases for MVP |
-| Dawn restoration | 30-90 seconds |
+| Dawn growth allocation | 30-90 seconds |
 | Full daily loop | 5-10 minutes |
 
 ### 17.2 Early Reward Cadence
@@ -1081,23 +1132,24 @@ Only the first three days are fully specified above, but the broader first-week 
 The first three days should each provide:
 
 - One new mechanic.
-- One visible restoration.
+- One visible character or facility improvement.
 - One emotional beat with Alistair.
 - One deck or card improvement.
 - One reason to return tomorrow.
 
-### 17.3 Restoration Costs
+### 17.3 Growth Costs
 
-Early restorations should be affordable enough to guarantee visible progress.
+Early growth costs should be affordable enough to guarantee visible progress.
 
 Suggested early costs:
 
-| Restoration | Cost | Notes |
+| Growth Item | Cost | Notes |
 | --- | ---: | --- |
-| Clear Ballroom Thorns | 10 Lumen | Guaranteed after Day 1 |
-| Restore Stained Glass | 25 Lumen | Guaranteed or near-guaranteed after Day 2 |
-| Unlock Grand Library | 50 Lumen | Achievable after Day 3 with good play |
-| First Outfit Repair | 40 Lumen + material | Optional side path |
+| Clear Ballroom Practice Space | 10 Lumen | Guaranteed after Day 1 |
+| Mirror Hall Level 1 | 25 Lumen | Guided Day 2 unlock |
+| Moon Practice Gloves | 25 Lumen + 1 Style Material | Guided Day 3 wardrobe reward |
+| Wardrobe Atelier Level 1 | 40 Lumen | Early style-management unlock |
+| Grand Library Level 1 | 50 Lumen | Advanced card study unlock |
 | First Card Merge | 3 duplicate cards | Tutorial-driven |
 
 Exact values should be tuned after prototype scoring exists.
@@ -1160,7 +1212,9 @@ The first playable prototype should prove:
 - One lead pattern.
 - One Frame check.
 - One cinematic phrase replay.
-- One manor restoration moment.
+- One day-action choice.
+- One skill or wardrobe improvement.
+- One castle facility improvement.
 
 ### 19.2 Hackathon Deliverables
 
@@ -1170,12 +1224,13 @@ Recommended hackathon package:
    - Portrait UI.
    - Day/Night/Dawn screens.
    - Base + Modifier card slotting.
-   - Restored vs cursed room comparison.
+   - Mortal follower before/after styling comparison.
+   - Castle facility improvement comparison.
    - Cel-shaded Alistair and protagonist.
 
 2. Economy spreadsheet:
    - Lumen generated per night.
-   - Room restoration costs.
+   - Skill, wardrobe, and facility costs.
    - Card merge costs.
    - Lumen conversion example.
    - Early progression pacing.
@@ -1185,7 +1240,7 @@ Recommended hackathon package:
    - First three days in detail.
    - Deck-size ramp.
    - Mechanic unlock ramp.
-   - Manor restoration beats.
+   - Skill, style, Bond, and facility growth beats.
 
 4. Vertical slice:
    - One complete nightly dance.
@@ -1193,7 +1248,7 @@ Recommended hackathon package:
    - One lead pattern.
    - One Frame check.
    - One cinematic replay.
-   - One visible Dawn restoration.
+   - One visible Dawn growth choice.
 
 ---
 
@@ -1210,6 +1265,8 @@ These questions should be resolved during prototyping.
 7. Should Alistair's lead be fully visible, partially visible, or relationship-dependent?
 8. How explicit should the romance become while staying mobile-store friendly?
 9. How much real Bachata terminology should the card names use versus gothic fantasy naming?
+10. How many day-action choices should be available before the player feels overloaded?
+11. How much of wardrobe progression should be stats, cosmetics, or both?
 
 ---
 
@@ -1220,8 +1277,10 @@ The MVP should be small but representative.
 ### MVP Systems
 
 - One character pair: protagonist and Alistair.
-- One room: Grand Ballroom.
-- One restoration upgrade: thorns cleared from dance floor.
+- One facility: Grand Ballroom.
+- One visible facility improvement: practice space cleared.
+- One skill improvement: Beginner Confidence I or Technique I.
+- One wardrobe item: Moon Practice Gloves or equivalent.
 - One song.
 - Three playable phrases.
 - 12-card starter collection.
@@ -1261,7 +1320,7 @@ The MVP succeeds if a player can:
 - Match Alistair's lead.
 - Survive or fail a dip based on Frame.
 - Earn Lumen.
-- Restore part of the ballroom.
+- Improve the mortal follower or a castle facility.
 - Want to play the next night.
 
 ---
@@ -1274,15 +1333,21 @@ The MVP succeeds if a player can:
 | Binder | The player's persistent card collection. |
 | Beat | Timing unit for phrase construction. |
 | Bond / Intimacy | Relationship progression currency with Alistair. |
-| Dawn | Post-performance restoration phase. |
+| Castle Facility | A usable castle space that supports training, style, music, relationship, or performance. |
+| Confidence | Persistent or temporary growth track that improves Poise and expressive performance. |
+| Dawn | Post-performance growth allocation phase. |
+| Day Action | Limited daytime choice spent on training, rehearsal, styling, bonding, or facility improvement. |
 | Flow | Phrase-local combo resource generated by Footwork and spent on modifiers. |
 | Frame | Phrase-local support resource used against dips and demanding leads. |
-| Lumen Essence | Main restoration currency earned from dance performance. |
+| Lumen Essence | Main flexible growth currency earned from dance performance. |
+| Mirror Hall | Castle facility for Technique drills, replay reflection, and Confidence growth. |
 | Nightly Performance | One dance/song. Not a roguelike run. |
 | Phrase | One 8-beat playable turn. |
 | Poise | Nightly mistake buffer. Reaching 0 can end the song early. |
 | Rehearsal Grid | Daytime card rehearsal, merge, and refinement interface. |
+| Style Materials | Wardrobe and cosmetic crafting resources earned from facilities and performances. |
 | Stance | Couple position such as Open, Close, or Wrap. |
 | Stumble | Failure event that breaks score and reduces Poise. |
 | Syncopation | Later Grand Library unlock for 0-Beat flourish cards tied to specific anchors. |
 | Lead Pattern | Alistair's telegraphed dance invitation or support requirement. |
+| Wardrobe Atelier | Castle facility for outfits, accessories, hairstyles, perfumes, and style-based stats. |
