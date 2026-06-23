@@ -2,6 +2,8 @@
 
 ## Production Plan
 
+Author: Erick Alberto Rea
+
 **Game Title:** Eight Counts to Midnight
 
 ---
