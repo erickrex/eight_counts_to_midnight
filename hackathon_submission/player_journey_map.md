@@ -22,8 +22,10 @@ flowchart TD
     H --> I["10:00 - First partner setup<br/>Close Invitation appears as Alistair's lead"]
     I --> J["12:00 - Player responds<br/>Foil Basic Step -> Step Into Close -> Close Sway"]
     J --> K["14:00 - Perfect Connection<br/>Camera tightens as Alistair's hand settles at her waist"]
-    K --> L["15:00 - Return hook<br/>Mirror Hall preview: train for advanced leads tomorrow"]
+    K --> L["15:00 - Return hook / SESSION 1 ENDS<br/>Day 2 dawn screen. Mirror Hall preview: train for advanced leads tomorrow"]
 ```
+
+**Where the first session ends:** A natural stop lands at the Day 2 dawn screen (~15:00). The player has completed one full loop (solo awakening, first partner dance, first growth payoff) and is handed a clear reason to return. A shorter 5-10 minute session can end one beat earlier, at the Day 1 dawn growth (~4:00), which also closes a complete loop. Both endpoints leave the player on a reward and a forward hook, never mid-phrase.
 
 ---
 
@@ -36,6 +38,39 @@ flowchart TD
 | Challenge | Curiosity and orientation. | Guided timing: learn that 8 Beats make one phrase. | See cause and effect: good timing changes the curse. | Enter Close before Beat 5 to earn Perfect Connection. |
 | Emotional beat | Gothic curiosity. | Vulnerability: she dances alone while the manor watches. | Wonder: her dance mattered. | Trust: the first partner dance turns Alistair into someone she must learn to read. |
 | Return hook | Who is the statue? | Finish the first phrase. | Alistair is awake and Day 2 is promised. | Mirror Hall points to the next goal: train for smoother, closer, more advanced dances. |
+
+---
+
+## Difficulty & Intensity Curve
+
+The first 15 minutes follow a guided sawtooth: each new demand is taught, executed, then rewarded with a calm beat before the next, harder ask. Challenge never spikes without a prior teaching moment.
+
+```text
+Intensity
+ High |                                   12:00 ____ 14:00
+      |                        10:00 ___/        \  (Perfect
+      |          3:00 __                         \   Connection)
+  Med |        __/      \           8:00 __/                \
+      |   1:00/          \    6:00 _/                         \ 15:00
+  Low |__/                \__/  \__/                            \____
+      +----------------------------------------------------------------
+        0:00   2:00   4:00    6:00    8:00   10:00   12:00   14:00
+        learn  do     reward  calm    decide  read    execute  payoff
+```
+
+| Beat | Time | Challenge | Why the curve moves here |
+|---|---|---|---|
+| Arrival | 0:00 | Minimal | Pure orientation. No fail state. |
+| Guided solo phrase | 1:00-2:00 | Low (guided) | Teaches the 8-beat rule with rails on. Cards are placed for the player. |
+| Beat 8 payoff | 3:00 | Reward spike | Emotional high, not a skill test. Confirms cause and effect. |
+| Dawn + Alistair wakes | 4:00-6:00 | Low (calm) | Narrative breather. Banks the first reward before new demands. |
+| Day 2 preparation | 8:00 | Medium | First real decision: spend 2 Day Actions with tradeoffs. |
+| Close Invitation appears | 10:00 | Medium-high | First genuine challenge: read the lead and plan a stance change. |
+| Player responds | 12:00 | High | First unaided execution under the Beat-5 constraint. |
+| Perfect Connection | 14:00 | Reward spike | Skill payoff. The hardest ask resolves into the biggest moment. |
+| Return hook | 15:00 | Low (calm) | Resolution plus a forward pull toward tomorrow's training. |
+
+The principle: **teach on a low beat, test on a rising beat, reward on a spike, then rest.** No mechanic is tested before it is taught, and every difficulty spike is immediately followed by a payoff and a calm beat.
 
 ---
 

@@ -212,6 +212,8 @@ The first version should prove the daily preparation loop, the 8-beat phrase bui
 |---|---|
 | More songs and rhythm profiles | Gives Musicality more value. |
 | More manor facilities | Adds new training and style paths. |
+| Tornado Camera | A dramatic orbiting reward camera that triggers on high-multiplier phrases, stance chains, and supported dips, turning the best moments into cinematic payoffs. |
+| Levitation and anti-gravity moves | Supernatural Bachata moves unlocked through Shadow and high Bond, where Alistair's power lifts the follower off the floor for partner shapes no mortal dance allows. |
 | Seasonal dance events | Creates themed goals around costumes, songs, and leads. |
 | Deeper wardrobe sets | Builds stronger visual identity and play styles. |
 | Social showcase features | Lets players share outfits, phrase replays, and manor snapshots. |

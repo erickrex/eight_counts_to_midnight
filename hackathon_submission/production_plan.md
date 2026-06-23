@@ -59,11 +59,12 @@ It proves one promise: **the player prepares, turns that preparation into choreo
 | Dependency | Why It Matters | MVP Approach |
 |---|---|---|
 | Phrase rules engine | Checks Beats, stance legality, Flow/Frame costs, and lead responses. | Use a small card data table and one validation function. |
+| Card metadata schema (move taxonomy) | Every card needs prerequisite stance, ending stance, Beat cost, Flow, and tags so the rules engine, legality checks, and replays stay consistent. A shared schema is what lets content scale without re-engineering. | Define the schema once and fully label the 10 MVP cards. The same structure scales later to a large Bachata move library (target 500+ moves) as a content task, not a code change. |
 | Card/timeline UI | Lets players read choreography on a phone. | Portrait layout with hand cards, Bar A/Bar B, modifier slots, and clear illegal-card feedback. |
 | Lead-pattern validation | Makes Alistair feel like a dance partner. | Build Close Invitation first; preview Dark Embrace only as the Shadow teaser. |
 | Replay layer | Turns card choices into a dance result. | Use short pose sequences for Clean, Stumble, and Perfect Connection outcomes. |
 | Progression save state | Lets Day choices affect Night and Dawn. | Store Technique bonus, upgraded card, Bond, Lumen Essence, and Ballroom state. |
-| Art and animation pipeline | Keeps the visual package achievable. | Start with stills and simple movement beats, then polish the key moments. |
+| Art and animation pipeline | The 3D partner dance is the highest-risk, highest-cost asset. Bachata is a connected lead/follow dance, so motion must read as real partnering, not two solo loops. | MVP uses still poses and simple movement beats for Clean, Stumble, and Perfect Connection. The production build captures real Bachata dancers with motion capture, retargets to the two characters, and polishes in Cascadeur for physics-based cleanup and secondary motion. Modular base moves plus additive Styling layers keep the combination count manageable: a focused set of mocapped Footwork, Transitions, and key dips per stance covers many card combinations without capturing every permutation. |
 
 ---
 
